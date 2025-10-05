@@ -1,0 +1,8 @@
+mongoengine==0.29.1
+pymongo==4.15.2
+python-dotenv==1.1.1
+scikit-learn==1.7.2
+spacy==3.8.7
+nltk==3.9.2
+emoji==2.15.0
+numpy==2.2.6
