@@ -8,7 +8,7 @@ def extract_count_features(texts: List[str]) -> Tuple[spmatrix | ndarray , Count
     X = vectorizer.fit_transform(texts)
     return X, vectorizer
 
-def extract_tfidf_features(texts: List[str]) -> Tuple[spmatrix, TfidfVectorizer]:
+def extract_tfidf_features(texts: List[str], min_df: int, max_df: int) -> Tuple[spmatrix, TfidfVectorizer]:
     vectorizer = TfidfVectorizer()
     X = vectorizer.fit_transform(texts)
     return X, vectorizer
